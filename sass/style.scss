@@ -1,0 +1,10 @@
+@import 'cores';
+*{margin:0; padding: 0px; box-sizing: border-box;}
+
+.container {display:flex; 
+
+.fundo {@include Border-Red;width: 100%; height: 100vh;background: url(../images/background.jpg) cover no-repeat;}
+}
+
+a{color: $link;
+ &:hover{color: $link-hover;}}

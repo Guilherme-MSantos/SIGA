@@ -1,0 +1,10 @@
+$primary-color :#5C6866;
+$secundary-color:#C4C6C2;
+$terciary-color:#FDFDFD;
+$button-color:#E27727;
+$link:#6B68F6;
+$link-hover:#8683FE;
+
+@mixin Border-Red { border: red 5px solid;}
+@mixin Border-Blue { border: blue 5px solid;}
+@mixin Border-Yellow {border: yellow 5px solid;}

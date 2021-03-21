@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .fundo {
+  border: red 5px solid;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/background.jpg) cover no-repeat;
+}
+
+a {
+  color: #6B68F6;
+}
+
+a:hover {
+  color: #8683FE;
+}
+/*# sourceMappingURL=style.css.map */
