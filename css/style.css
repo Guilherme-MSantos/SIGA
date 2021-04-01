@@ -58,6 +58,10 @@ h2 {
   color: white;
 }
 
+body {
+  font-size: 16px;
+}
+
 .center {
   text-align: center;
 }
@@ -81,9 +85,100 @@ header img {
   color: white;
   height: 70vh;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.menu-lateral .config {
+  position: relative;
+  top: 0px;
+  right: -50%;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.menu-lateral .config:hover {
+  -webkit-transform: rotate(100deg);
+          transform: rotate(100deg);
+}
+
+.menu-lateral .usuario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-lateral .profile-picture {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1;
+          flex: 0 1;
+}
+
+.menu-lateral .usuario-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-lateral .usuario-info .ciclo-ra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu-lateral .usuario-info .ra {
+  margin-left: 10px;
+}
+
+.menu-lateral .usuario-info .email-institucional {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.menu-lateral a {
+  color: white;
 }
 
 .consulte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url(../images/consulte-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -91,8 +186,52 @@ header img {
   width: 100vw;
 }
 
-.img-consultas::after {
+.consulte .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 700px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: scroll;
+}
+
+.consulte .consulte-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 118px;
+  margin: 20px 20px;
+}
+
+.consulte .consulte-item input {
+  width: 118px;
+  position: relative;
+  top: -2px;
+  padding: 5px;
+  color: white;
+  background-color: #E27727;
+  border: none;
+}
+
+.consulte .img-consulta {
+  width: 100%;
+  height: 100%;
+}
+
+.consulte .img-consulta::after {
   content: ' ';
+  display: block;
   position: relative;
   top: 0px;
   background: rgba(196, 196, 196, 0.51);
@@ -104,6 +243,18 @@ header img {
   background-repeat: no-repeat;
   height: 70vh;
   width: 100vw;
+}
+
+.avisos h2 {
+  margin-top: 20px;
+}
+
+.avisos h2::after {
+  content: " ";
+  display: block;
+  width: 110px;
+  height: 10px;
+  background-color: #E27727;
 }
 
 * {

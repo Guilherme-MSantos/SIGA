@@ -1,55 +1,157 @@
 //*Gerais
-h2{
+h2 {
     color: white;
 }
-
-.center{
+body{
+    font-size: 16px;
+}
+.center {
     text-align: center;
 }
 
 //*header
-header{
+header {
     display: flex;
-    justify-content:space-between;
-   
-    img{
+    justify-content: space-between;
+
+    img {
         width: 20%;
         height: auto;
     }
 }
+
 //*Menu lateral
-.menu-lateral{
+.menu-lateral {
     background-color: $button-color;
-    color:white;
+    color: white;
     height: 70vh;
     width: 100vw;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    .config { //* Icone de configuração
+        position: relative;
+        top: 0px;
+        right: -50%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: .7s ease;
+
+        &:hover {
+            transform: rotate(100deg);
+        }
+    }
+
+    .usuario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+         .profile-picture {
+            flex: 0 1;
+          }
+
+
+   .usuario-info{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+      
+    .ciclo-ra{
+        display: flex;
+        justify-content:space-around ;
+    }
+        .ra{
+            margin-left:10px
+    
+      }
+       .email-institucional{
+        
+       
+        align-self: center;
+       }
+   }
+   a{
+       color:white;
+   }
 }
 
 //*Consulte
-.consulte{
-   // background-color: blueviolet;
-   background-image: url(../images/consulte-bg.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
+.consulte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/consulte-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 70vh;
     width: 100vw;
+.items{
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 700px;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+   
 }
+    .consulte-item{
+       display: flex;
+       flex-direction: column;
+       
+        width: 118px;
+        margin:20px 20px;
+        
+       input{
+         
+           width: 118px;
+            position: relative;
+            top: -2px;
+            padding: 5px;
+        color:white;
+        background-color: $button-color;
+         border: none;}
+    }
 
-.img-consultas {
-
-    &::after{
-        content: ' ';
-        position:relative;
-        top:0px;
-        background: $after
+    .img-consulta {
+        width: 100%;
+        height: 100%;
+        &::after {
+            content: ' ';
+            display: block;
+            position: relative;
+            top: 0px;
+            background: $after
+        }
     }
 }
+
+
+
 //*Avisos
-.avisos{
-   // background-color: crimson;
-   background-image: url(../images/avisos-bg.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
+.avisos {
+    // background-color: crimson;
+    background-image: url(../images/avisos-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 70vh;
     width: 100vw;
+
+    h2{
+        margin-top: 20px;
+        &::after{ 
+            
+            content :" ";
+            display: block;
+            
+            width:110px;
+            height: 10px;
+            background-color: $button-color;
+        }
+    }
 }
