@@ -1,0 +1,55 @@
+//*Gerais
+h2{
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+//*header
+header{
+    display: flex;
+    justify-content:space-between;
+   
+    img{
+        width: 20%;
+        height: auto;
+    }
+}
+//*Menu lateral
+.menu-lateral{
+    background-color: $button-color;
+    color:white;
+    height: 70vh;
+    width: 100vw;
+}
+
+//*Consulte
+.consulte{
+   // background-color: blueviolet;
+   background-image: url(../images/consulte-bg.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+    height: 70vh;
+    width: 100vw;
+}
+
+.img-consultas {
+
+    &::after{
+        content: ' ';
+        position:relative;
+        top:0px;
+        background: $after
+    }
+}
+//*Avisos
+.avisos{
+   // background-color: crimson;
+   background-image: url(../images/avisos-bg.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+    height: 70vh;
+    width: 100vw;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Login</title>
 </head>
+
 <body>
-    <div class="container">
+    <div class="container login">
         <section class="fundo">
-        
+
         </section>
         <section class="form-container">
 
@@ -23,16 +25,22 @@
             <form action="">
                 <label for="User">Usuario</label>
 
-                <input type="email" name="User" id="User" placeholder="Example@email.com">
+                <input type="email" name="User" id="User" placeholder="Example@email.com" class="input-form input">
 
                 <label for="Password">Senha</label>
-                <input type="password" name="Password" id="Password">
 
-                <input type="button" value="Confirmar" class='btn'>
+                <input type="password" name="Password" id="Password" class="input-form input"
+                    placeholder="Digite sua senha">
 
             </form>
-            <a href="ajuda.html">Problemas para acessar ?</a>
+
+            <div class="submit-and-help">
+                <a href="aluno.html"> <input type="button" value="Confirmar" class='btn'></a>
+
+                <a href="help.html">Problemas para acessar ?</a>
+            </div>
         </section>
     </div>
 </body>
+
 </html>
