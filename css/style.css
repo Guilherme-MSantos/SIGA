@@ -82,9 +82,8 @@
   span {
     max-width: 58vw;
   }
-  .items {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+  .sair {
+    margin-bottom: 15px;
   }
 }
 
@@ -200,7 +199,10 @@ header img {
 
 .menu-lateral a {
   color: white;
-  margin-bottom: 20px;
+}
+
+.menu-lateral .sair {
+  margin-bottom: 35px;
 }
 
 .consulte {
