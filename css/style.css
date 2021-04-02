@@ -10,19 +10,19 @@
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
   .login {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background-image: url(../images/bg-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
   .container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    margin-top: 30px;
+    margin-top: 0px;
   }
   .container .logo {
     display: -webkit-box;
@@ -45,12 +45,46 @@
     max-width: 100%;
     font-size: 16px;
   }
-  .container .btn {
-    width: 50%;
-    font-size: 16px;
+  .container .submit-and-help {
+    height: 150px;
+    margin-top: 10px;
+  }
+  .container .submit-and-help .btn {
+    width: 247px;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 0;
+  }
+  .container .submit-and-help .btn a {
+    margin-top: 0px;
   }
   .container .fundo {
     display: none;
+  }
+  .form-container {
+    width: 100vw;
+  }
+  .form-container .logo-help {
+    position: relative;
+    left: 20px;
+    width: 60%;
+    height: auto;
+  }
+  .form-container .seta {
+    left: 0px;
+    margin-left: 5px;
+    width: 12vw;
+    height: auto;
+  }
+  .form-container .seta img {
+    width: 100%;
+  }
+  span {
+    max-width: 58vw;
+  }
+  .items {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -166,6 +200,7 @@ header img {
 
 .menu-lateral a {
   color: white;
+  margin-bottom: 20px;
 }
 
 .consulte {

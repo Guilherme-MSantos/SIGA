@@ -15,18 +15,18 @@
 }
 
 //* android
-@media screen and (max-width:599px) {
+@media screen and (min-width:320px) and (max-width:1024px) {
     .login { 
-        width: 100vw; height: 100%;
+        width: 100vw; height: 100vh;
         background-image: url(../images/bg-mobile.jpg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
 
     }
 
     .container {
-        width: 100vw; height: 100vh;margin-top:30px;
+        width: 100%; height: 100vh;margin-top:0px; 
        
         
 
@@ -37,11 +37,57 @@
         form{ width: 300px; margin-top: 30px;
             .input-form{max-width: 100%; font-size: 16px;}}
 
-        .btn{width: 50%; font-size: 16px;}
-
+       
+        .submit-and-help{
+           
+            height: 150px;
+            margin-top: 10px;
+       
+            .btn{
+                width: 247px;
+                font-size: 18px;
+                margin-bottom: 0px;
+                margin-top: 0;
+                a{margin-top:0px}
+            }
+            
+        }
 
     .fundo {
         display: none;
     }
+}
+//*help
+
+.form-container{
+    width: 100vw; 
+    
+
+    .logo-help{
+        position: relative;
+        left: 20px;
+        width: 60%;height: auto
+    }
+    
+   // img{width: 60%;height: auto;border: blue solid 5px; margin: 20px auto;}
+    .seta{
+        //background-color: yellow;
+        left: 0px;
+      
+        margin-left: 5px;
+     
+       width: 12vw;
+       height: auto;
+       img{width: 100%;}
+    }
+}
+
+span{
+    max-width: 58vw;
+}
+
+//* aluno
+.items{
+    flex-wrap: nowrap;
 }
 }
